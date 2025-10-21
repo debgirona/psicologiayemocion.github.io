@@ -2,85 +2,252 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Psicología y emoción — Girona</title>
-  <meta name="description" content="Psicología y emoción. Terapia individual, de pareja y para niños en Girona." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Psicología y Emoción — Girona</title>
+  <meta name="description" content="Servicios psicológicos profesionales en Girona. Terapia individual y de pareja con enfoque integrador." />
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Psicología y Emoción",
+    "description": "Servicios psicológicos profesionales en Girona. Terapia individual y de pareja con enfoque integrador.",
+    "address": {"@type":"PostalAddress","streetAddress":"Plaça Josep Pla, 4, piso 2 puerta 8","addressLocality":"Girona","addressRegion":"GI","addressCountry":"ES"},
+    "telephone": "+34629179175",
+    "email": "debgirona@gmail.com",
+    "areaServed": "ES"
+  }
+  </script>
 </head>
-<body>
-  <header role="banner">
-    <div>
-      <a href="#home">Psicología y emoción</a>
+<body class="min-h-screen antialiased text-slate-900 bg-gradient-to-b from-stone-50 via-amber-50 to-emerald-50">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-emerald-100">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
+      <a href="#inicio" class="font-semibold tracking-tight text-lg">Psicología y Emoción</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:opacity-80" href="#servicios">Servicios</a>
+        <a class="hover:opacity-80" href="#equipo">Equipo</a>
+        <a class="hover:opacity-80" href="#faq">FAQ</a>
+        <a class="hover:opacity-80" href="#contacto">Contacto</a>
+      </nav>
+      <div class="hidden md:flex gap-3">
+        <a href="#contacto" class="rounded-2xl px-4 py-2 bg-emerald-200 hover:bg-emerald-300 text-slate-900 border border-emerald-300 shadow-sm">Reservar sesión</a>
+        <a href="tel:+34629179175" class="rounded-2xl px-4 py-2 bg-white/80 hover:bg-white text-slate-900 border border-stone-200 shadow-sm">629 179 175</a>
+      </div>
     </div>
-    <nav role="navigation" aria-label="Principal">
-      <a href="#home">Inicio</a>
-      <a href="#services">Servicios</a>
-      <a href="#team">Equipo</a>
-      <a href="#contact">Contacto</a>
-      <a href="#legal">Información Legal y de Privacidad</a>
-    </nav>
   </header>
 
-  <main id="home" role="main">
-    <section id="hero" aria-labelledby="hero-heading">
-      <h1 id="hero-heading">Servicios psicológicos profesionales en Girona</h1>
-      <p>Terapia confidencial para adultos, parejas y niños. Atención basada en la evidencia. Sin largas esperas.</p>
-      <p><a href="https://calendar.google.com/bookings/s/[your-booking-link]">Reservar sesión</a></p>
-    </section>
-
-    <section id="services" aria-labelledby="services-heading">
-      <h2 id="services-heading">Servicios</h2>
-      <p>En Psicología y emoción ofrecemos atención personalizada y cercana, orientada a resultados y bienestar emocional. Todas las sesiones son confidenciales y adaptadas a las necesidades de cada persona.</p>
-      <ul>
-        <li>Terapia individual (adultos)</li>
-        <li>Terapia infantil y adolescente</li>
-        <li>Terapia de pareja</li>
-        <li>Evaluación psicológica</li>
-      </ul>
-      <p>Duración y tarifas disponibles bajo solicitud. Seguros aceptados: [lista]. Idiomas: [lista].</p>
-    </section>
-
-    <section id="team" aria-labelledby="team-heading">
-      <h2 id="team-heading">Equipo</h2>
-      <article aria-labelledby="therapist-1">
-        <h3 id="therapist-1">Deborah Beltrán</h3>
-        <p>Psicóloga. Especialista en terapia cognitivo-conductual, trauma y ansiedad.</p>
-      </article>
-    </section>
-
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contacto</h2>
+  <!-- Hero -->
+  <section id="inicio" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 [mask-image:radial-gradient(60%_50%_at_50%_20%,black,transparent)]">
+      <div class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-emerald-100"></div>
+      <div class="absolute top-32 -right-20 h-96 w-96 rounded-full bg-amber-100"></div>
+    </div>
+    <div class="max-w-6xl mx-auto px-5 md:px-8 pt-20 md:pt-28 pb-16 md:pb-24 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <address>
-          Psicología y emoción<br>
-          Calle Salud 10, 17001 Girona, España<br>
-          Teléfono: <a href="tel:+34600123456">+34 600 123 456</a><br>
-          Email: <a href="mailto:hello@psicologiayemocion.example">hello@psicologiayemocion.example</a><br>
-          <a href="https://calendar.google.com/bookings/s/[your-booking-link]">Reservar sesión</a>
-        </address>
+        <p class="text-sm uppercase tracking-widest text-emerald-700 font-medium">Girona</p>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mt-2">Servicios psicológicos profesionales</h1>
+        <p class="text-lg text-slate-600 mt-4">Terapia para adultos — individual o de pareja — con psicoterapia basada en la <strong>psicología integradora</strong>. Atención cercana, cálida y orientada a resultados.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contacto" class="rounded-2xl px-5 py-3 bg-emerald-200 hover:bg-emerald-300 text-slate-900 border border-emerald-300 shadow-sm">Agendar primera sesión</a>
+          <a href="#servicios" class="rounded-2xl px-5 py-3 bg-white/80 hover:bg-white text-slate-900 border border-stone-200 shadow-sm">Ver servicios</a>
+        </div>
+        <ul class="mt-6 text-sm text-slate-600 grid sm:grid-cols-3 gap-2">
+          <li class="flex items-center gap-2">✅ Colegiada n.º 35169</li>
+          <li class="flex items-center gap-2">🔒 Confidencialidad</li>
+          <li class="flex items-center gap-2">🌐 Presencial y online</li>
+        </ul>
       </div>
-    </section>
+      <div>
+        <div class="rounded-3xl bg-white/80 backdrop-blur ring-1 ring-emerald-100 shadow-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Sobre mí</h3>
+            <p class="mt-4 text-slate-600"><strong>Deborah Beltrán</strong>, psicóloga colegiada 35169. Trabajo desde la psicología integradora: combino herramientas de distintas corrientes para ajustarlas a tu caso y momento vital.</p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li>✔︎ Escucha activa y psicoeducación clara.</li>
+              <li>✔︎ Intervenciones basadas en evidencia con sensibilidad clínica.</li>
+              <li>✔︎ Planes personalizados y revisables.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="legal" aria-labelledby="legal-heading">
-      <h2 id="legal-heading">Información Legal y de Privacidad</h2>
-      <p><strong>Aviso Legal</strong><br>
-      Titular: Psicología y emoción S.L.<br>
-      CIF: B12345678<br>
-      Dirección: Calle Salud 10, 17001 Girona, España<br>
-      Teléfono: +34 600 123 456 · Email: hello@psicologiayemocion.example</p>
+  <!-- Servicios -->
+  <section id="servicios" class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="rounded-3xl bg-white/80 backdrop-blur ring-1 ring-emerald-100 p-6">
+        <h3 class="text-lg font-semibold mb-2">🧠 Terapia individual (adultos)</h3>
+        <p class="text-slate-600">Procesos de ansiedad, estado de ánimo, duelo, trauma, autoestima y autocuidado. Duración 50–60 min. Frecuencia semanal o quincenal.</p>
+      </div>
+      <div class="rounded-3xl bg-white/80 backdrop-blur ring-1 ring-emerald-100 p-6">
+        <h3 class="text-lg font-semibold mb-2">🤝 Terapia de pareja</h3>
+        <p class="text-slate-600">Comunicación, confianza, gestión de conflictos y toma de decisiones para fortalecer el vínculo.</p>
+      </div>
+      <div class="rounded-3xl bg-white/80 backdrop-blur ring-1 ring-emerald-100 p-6">
+        <h3 class="text-lg font-semibold mb-2">💬 Modalidad</h3>
+        <p class="text-slate-600">Presencial en <strong>Plaça Josep Pla, 4, 2º-8ª (Girona)</strong> o formato online. Idiomas: castellano y catalán.</p>
+      </div>
+    </div>
 
-      <p><strong>Política de Privacidad</strong><br>
-      Responsable: Psicología y emoción S.L. — trata los datos con la finalidad de gestionar citas y consultas.  
-      Base jurídica: consentimiento del usuario.  
-      Los datos pueden ser tratados por terceros proveedores (por ejemplo, Google LLC) para la gestión de reservas o mapas.  
-      Los usuarios pueden ejercer sus derechos de acceso, rectificación y supresión escribiendo a hello@psicologiayemocion.example.</p>
-    </section>
-  </main>
+    <div class="mt-12 grid md:grid-cols-2 gap-8">
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold">Áreas de intervención</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="flex gap-3">
+            <div class="shrink-0 rounded-2xl p-3 bg-white/80 ring-1 ring-emerald-100">🛡️</div>
+            <div>
+              <h3 class="font-semibold">Ansiedad y estrés</h3>
+              <p class="text-slate-600 text-sm">Crisis de pánico, preocupación excesiva, perfeccionismo y fobias.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="shrink-0 rounded-2xl p-3 bg-white/80 ring-1 ring-emerald-100">🧩</div>
+            <div>
+              <h3 class="font-semibold">Estado de ánimo</h3>
+              <p class="text-slate-600 text-sm">Tristeza persistente, apatía, depresión y recaídas.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="shrink-0 rounded-2xl p-3 bg-white/80 ring-1 ring-emerald-100">💗</div>
+            <div>
+              <h3 class="font-semibold">Duelo y pérdidas</h3>
+              <p class="text-slate-600 text-sm">Fallecimientos, separaciones y cambios vitales.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="shrink-0 rounded-2xl p-3 bg-white/80 ring-1 ring-emerald-100">👥</div>
+            <div>
+              <h3 class="font-semibold">Terapia de pareja</h3>
+              <p class="text-slate-600 text-sm">Comunicación, confianza y gestión de conflictos.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="shrink-0 rounded-2xl p-3 bg-white/80 ring-1 ring-emerald-100">🌿</div>
+            <div>
+              <h3 class="font-semibold">Autocuidado y autoestima</h3>
+              <p class="text-slate-600 text-sm">Límites, culpa, autoexigencia y autocompasión.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold">Mi enfoque integrador</h2>
+        <ul class="space-y-3 text-slate-600">
+          <li>✔︎ <strong>Evaluación inicial:</strong> tu historia y objetivos.</li>
+          <li>✔︎ <strong>Plan de tratamiento:</strong> metas realistas y técnicas acordadas.</li>
+          <li>✔︎ <strong>Intervención:</strong> reestructuración cognitiva, regulación emocional, valores, apego y patrones relacionales.</li>
+          <li>✔︎ <strong>Seguimiento y cierre:</strong> consolidación de logros y prevención de recaídas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <footer role="contentinfo">
-    <p>© 2025 Psicología y emoción</p>
+  <!-- Equipo -->
+  <section id="equipo" class="max-w-6xl mx-auto px-5 md:px-8 py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold">Deborah Beltrán</h2>
+        <p class="text-slate-600 mt-3">Psicóloga Integradora (col. 35169). Acompañamiento cercano y eficaz: ansiedad, depresión, duelo, trauma y pareja.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-sm text-slate-600">
+          <li>⏱️ 50–60 minutos</li>
+          <li>🗣️ Castellano y catalán</li>
+          <li>🌐 Presencial y online</li>
+          <li>🎯 Orientada a objetivos</li>
+        </ul>
+        <div class="mt-6 flex gap-3">
+          <a href="#contacto" class="rounded-2xl px-4 py-2 bg-emerald-200 hover:bg-emerald-300 text-slate-900 border border-emerald-300 shadow-sm">Pedir cita</a>
+          <a href="#contacto" class="rounded-2xl px-4 py-2 bg-white/80 hover:bg-white text-slate-900 border border-stone-200 shadow-sm">Escríbeme</a>
+        </div>
+      </div>
+      <div>
+        <div class="rounded-3xl overflow-hidden bg-white/80 backdrop-blur ring-1 ring-emerald-100">
+          <div class="aspect-[4/3] bg-gradient-to-br from-pink-100 to-violet-100 flex items-center justify-center">
+            <span class="text-slate-500">Foto profesional / despacho</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (sin JS con details/summary) -->
+  <section id="faq" class="max-w-4xl mx-auto px-5 md:px-8 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Preguntas frecuentes</h2>
+    <div class="space-y-3">
+      <details class="rounded-2xl bg-white/80 backdrop-blur ring-1 ring-emerald-100 p-4 group">
+        <summary class="cursor-pointer font-medium">¿La terapia online funciona?</summary>
+        <p class="mt-2 text-slate-600">Sí. La evidencia científica muestra resultados comparables a la presencial cuando existe una buena alianza terapéutica y un entorno adecuado. Te ayudo a prepararlo.</p>
+      </details>
+      <details class="rounded-2xl bg-white/80 backdrop-blur ring-1 ring-emerald-100 p-4 group">
+        <summary class="cursor-pointer font-medium">¿Cuánto dura un proceso?</summary>
+        <p class="mt-2 text-slate-600">Varía según los objetivos. Algunas metas se logran en 8–12 sesiones; otras requieren más tiempo. Revisamos el plan periódicamente.</p>
+      </details>
+      <details class="rounded-2xl bg-white/80 backdrop-blur ring-1 ring-emerald-100 p-4 group">
+        <summary class="cursor-pointer font-medium">¿Y si no conecto con la terapia?</summary>
+        <p class="mt-2 text-slate-600">La alianza terapéutica es clave. Si no lo ves claro, te orientaré hacia otras alternativas sin problema.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="max-w-6xl mx-auto px-5 md:px-8 py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <h2 class="text-2xl md:text-3xl font-bold">Contacto y reservas</h2>
+        <div class="space-y-3 text-slate-600">
+          <p>📞 <a class="underline" href="tel:+34629179175">629 179 175</a> · <a class="underline" href="https://wa.me/34629179175" target="_blank" rel="noreferrer">WhatsApp</a></p>
+          <p>✉️ <a class="underline" href="mailto:debgirona@gmail.com">debgirona@gmail.com</a></p>
+          <p>📍 Plaça Josep Pla 4, piso 2 puerta 8 — Girona</p>
+        </div>
+        <p class="text-sm text-slate-600">Horario a convenir. Frecuencia semanal o quincenal según objetivos y evolución.</p>
+      </div>
+
+      <div class="mt-12 rounded-3xl overflow-hidden ring-1 ring-emerald-100 shadow-sm">
+        <iframe title="Ubicación en Google Maps" class="w-full h-72 md:h-96 bg-stone-50" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Pla%C3%A7a%20Josep%20Pla%204%2C%20Girona&output=embed"></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Legal -->
+  <section id="legal" class="max-w-6xl mx-auto px-5 md:px-8 py-16">
+    <div class="grid md:grid-cols-3 gap-6 text-sm">
+      <div class="md:col-span-2 space-y-3">
+        <h3 class="font-semibold text-base">Información Legal y de Privacidad</h3>
+        <div class="rounded-2xl p-4 bg-white/80 backdrop-blur ring-1 ring-emerald-100">
+          <p class="font-medium">Aviso Legal</p>
+          <p class="text-slate-600 mt-1">© 2025 Psicología y Emoción.</p>
+          <hr class="my-3">
+          <p class="font-medium">Política de Privacidad</p>
+          <p class="text-slate-600 mt-1">Responsable: Psicología y Emoción S.L. — trata los datos con la finalidad de gestionar citas y consultas. Base jurídica: consentimiento del usuario. Los datos pueden ser tratados por terceros proveedores (por ejemplo, Google LLC) para la gestión de reservas o mapas. Los usuarios pueden ejercer sus derechos de acceso, rectificación y supresión escribiendo a <a class="underline" href="mailto:debgirona@gmail.com">debgirona@gmail.com</a>.</p>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <h3 class="font-semibold text-base">Enlaces</h3>
+        <ul class="space-y-2 text-slate-600">
+          <li><a class="hover:underline" href="#inicio">Inicio</a></li>
+          <li><a class="hover:underline" href="#servicios">Servicios</a></li>
+          <li><a class="hover:underline" href="#equipo">Equipo</a></li>
+          <li><a class="hover:underline" href="#faq">FAQ</a></li>
+          <li><a class="hover:underline" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-8 text-sm flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+      <p>© 2025 Psicología y Emoción — Girona</p>
+      <div class="flex gap-4">
+        <a class="hover:underline" href="#legal">Aviso Legal</a>
+        <a class="hover:underline" href="#legal">Política de Privacidad</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
