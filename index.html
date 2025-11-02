@@ -72,6 +72,64 @@
     #p2:checked~.dots label[for="p2"] {
       background: rgba(255, 255, 255, .95);
     }
+
+    @media (min-width: 768px) {
+      .photo-carousel .dots label {
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 9999px;
+        background: rgba(255,255,255,.8);
+        border: 1px solid rgba(0,0,0,.25);
+        transition: transform .2s ease, background .2s ease, border .2s ease;
+      }
+
+      .photo-carousel .dots label:hover {
+        transform: scale(1.2);
+        background: rgba(253,230,138,.9); /* amber-200 */
+        border-color: rgba(253,230,138,.9);
+      }
+
+      #p1:checked~.dots label[for="p1"],
+      #p2:checked~.dots label[for="p2"] {
+        background: rgba(52,211,153,.9); /* emerald-400 */
+        border-color: rgba(52,211,153,.9);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .photo-carousel input,
+      .photo-carousel .dots {
+        display: none;
+      }
+
+      .photo-carousel .slides {
+        position: static;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+      }
+
+      .photo-carousel .slides img {
+        position: static;
+        opacity: 1 !important;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 1.5rem;
+        margin-bottom: 1rem; /* spacing without solid background */
+      }
+
+      .photo-carousel .slides img:last-child {
+        margin-bottom: 0;
+      }
+
+      .photo-carousel-container {
+        background: transparent !important;
+        backdrop-filter: none !important;
+        box-shadow: none !important;
+      }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -250,7 +308,7 @@
         </div>
       </div>
       <div>
-        <div class="rounded-3xl overflow-hidden bg-white/80 backdrop-blur ring-1 ring-emerald-100">
+        <div class="photo-carousel-container rounded-3xl overflow-hidden bg-white/80 backdrop-blur ring-1 ring-emerald-100">
           <div class="photo-carousel">
             <input type="radio" name="photo" id="p1" checked>
             <input type="radio" name="photo" id="p2">
