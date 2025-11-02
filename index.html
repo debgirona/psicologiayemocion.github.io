@@ -91,7 +91,9 @@
   <!-- Navbar -->
   <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-emerald-100">
     <div class="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
-      <a href="#inicio" class="font-semibold tracking-tight text-lg">Psicología y Emoción</a>
+      <a href="#inicio" class="font-bold tracking-tight text-xl md:text-2xl flex items-center gap-2">
+        Psicología y Emoción
+      </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a class="hover:opacity-80" href="#inicio">Inicio</a>
         <a class="hover:opacity-80" href="#servicios">Servicios</a>
@@ -104,10 +106,15 @@
 
   <!-- Hero -->
   <section id="inicio" class="relative overflow-hidden">
+    <!-- Background gradients -->
     <div class="absolute inset-0 -z-10 [mask-image:radial-gradient(60%_50%_at_50%_20%,black,transparent)]">
-      <div class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-emerald-100"></div>
+      <div class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-emerald-100 flex items-center justify-center">
+        <img src="logo.png" class="w-48 object-contain opacity-90" />
+      </div>
       <div class="absolute top-32 -right-20 h-96 w-96 rounded-full bg-amber-100"></div>
     </div>
+
+    <!-- Hero content -->
     <div class="max-w-6xl mx-auto px-5 md:px-8 pt-20 md:pt-28 pb-16 md:pb-24 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <p class="text-sm uppercase tracking-widest text-emerald-700 font-medium">Girona</p>
@@ -128,6 +135,7 @@
           <li class="flex items-center gap-2">🌐 Presencial y online</li>
         </ul>
       </div>
+
       <div>
         <div class="rounded-3xl bg-white/80 backdrop-blur ring-1 ring-emerald-100 shadow-lg">
           <div class="p-6">
