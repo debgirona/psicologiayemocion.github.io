@@ -49,6 +49,15 @@
       opacity: 1;
     }
 
+
+    #p3:checked~.slides .s3 {
+      opacity: 1;
+    }
+
+    #p4:checked~.slides .s4 {
+      opacity: 1;
+    }
+
     .photo-carousel .dots {
       position: absolute;
       bottom: .75rem;
@@ -69,7 +78,9 @@
     }
 
     #p1:checked~.dots label[for="p1"],
-    #p2:checked~.dots label[for="p2"] {
+    #p2:checked~.dots label[for="p2"],
+    #p3:checked~.dots label[for="p3"],
+    #p4:checked~.dots label[for="p4"] {
       background: rgba(255, 255, 255, .95);
     }
 
@@ -78,25 +89,30 @@
         width: 1.3rem;
         height: 1.3rem;
         border-radius: 9999px;
-        background: rgba(255,255,255,.8);
-        border: 1px solid rgba(0,0,0,.25);
+        background: rgba(255, 255, 255, .8);
+        border: 1px solid rgba(0, 0, 0, .25);
         transition: transform .2s ease, background .2s ease, border .2s ease;
       }
 
       .photo-carousel .dots label:hover {
         transform: scale(1.2);
-        background: rgba(253,230,138,.9); /* amber-200 */
-        border-color: rgba(253,230,138,.9);
+        background: rgba(253, 230, 138, .9);
+        /* amber-200 */
+        border-color: rgba(253, 230, 138, .9);
       }
 
       #p1:checked~.dots label[for="p1"],
-      #p2:checked~.dots label[for="p2"] {
-        background: rgba(52,211,153,.9); /* emerald-400 */
-        border-color: rgba(52,211,153,.9);
+      #p2:checked~.dots label[for="p2"],
+      #p3:checked~.dots label[for="p3"],
+      #p4:checked~.dots label[for="p4"] {
+        background: rgba(52, 211, 153, .9);
+        /* emerald-400 */
+        border-color: rgba(52, 211, 153, .9);
       }
     }
 
     @media (max-width: 767px) {
+
       .photo-carousel input,
       .photo-carousel .dots {
         display: none;
@@ -117,7 +133,8 @@
         width: 100%;
         height: auto;
         border-radius: 1.5rem;
-        margin-bottom: 1rem; /* spacing without solid background */
+        margin-bottom: 1rem;
+        /* spacing without solid background */
       }
 
       .photo-carousel .slides img:last-child {
@@ -178,11 +195,14 @@
         <p class="text-sm uppercase tracking-widest text-emerald-700 font-medium">Girona</p>
         <h1 class="text-4xl md:text-5xl font-bold leading-tight mt-2">Servicios psicológicos profesionales</h1>
         <p class="text-lg text-slate-600 mt-4">
-          <strong>Terapia individual para adultos y adolescentes:</strong> ansiedad, tristeza, duelo, desarrollo o autoestima.
+          <strong>Terapia individual para adultos y adolescentes:</strong> ansiedad, tristeza, duelo, desarrollo o
+          autoestima.
           <br>
           <strong>Terapia de pareja:</strong> mejorar la comunicación, la confianza y resolver conflictos.
           <br>
-          Psicoterapia basada en la <strong>psicología integradora</strong>. Atención cercana, cálida y orientada a resultados.</p>
+          Psicoterapia basada en la <strong>psicología integradora</strong>. Atención cercana, cálida y orientada a
+          resultados.
+        </p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a href="#contacto"
             class="rounded-2xl px-5 py-3 bg-emerald-200 hover:bg-emerald-300 text-slate-900 border border-emerald-300 shadow-sm">Agendar
@@ -296,9 +316,14 @@
       <div>
         <h2 class="text-2xl md:text-3xl font-bold">Deborah Beltran</h2>
         <p class="text-slate-600 mt-3">
-          Psicóloga colegiada 35169,  comprometida con el bienestar emocional y el crecimiento personal. Trabajo desde un enfoque de psicología integradora, lo que me permite adaptar las herramientas y técnicas terapéuticas a las necesidades únicas de cada persona.
+          Psicóloga colegiada 35169, comprometida con el bienestar emocional y el crecimiento personal. Trabajo desde un
+          enfoque de psicología integradora, lo que me permite adaptar las herramientas y técnicas terapéuticas a las
+          necesidades únicas de cada persona.
           <br>
-          Acompaño a adolescentes y adultos en el abordaje de dificultades emocionales, el manejo del estrés, el fortalecimiento de la autoestima, los procesos de desarrollo personal y los retos que surgen en la vida cotidiana. Mi objetivo es ofrecer un espacio seguro, empático y profesional donde puedas comprenderte mejor y avanzar hacia una vida más equilibrada y satisfactoria.
+          Acompaño a adolescentes y adultos en el abordaje de dificultades emocionales, el manejo del estrés, el
+          fortalecimiento de la autoestima, los procesos de desarrollo personal y los retos que surgen en la vida
+          cotidiana. Mi objetivo es ofrecer un espacio seguro, empático y profesional donde puedas comprenderte mejor y
+          avanzar hacia una vida más equilibrada y satisfactoria.
         </p>
         <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-sm text-slate-600">
           <li>⏱️ 50–60 minutos</li>
@@ -315,19 +340,26 @@
         </div>
       </div>
       <div>
-        <div class="photo-carousel-container rounded-3xl overflow-hidden bg-white/80 backdrop-blur ring-1 ring-emerald-100">
+        <div
+          class="photo-carousel-container rounded-3xl overflow-hidden bg-white/80 backdrop-blur ring-1 ring-emerald-100">
           <div class="photo-carousel">
             <input type="radio" name="photo" id="p1" checked>
             <input type="radio" name="photo" id="p2">
+            <input type="radio" name="photo" id="p3">
+            <input type="radio" name="photo" id="p4">
 
             <div class="slides">
               <img src="selfie.jpeg" alt="Foto profesional" class="s1">
               <img src="despacho.jpeg" alt="Foto despacho" class="s2">
+              <img src="pareja.jpeg" alt="Foto consulta" class="s3">
+              <img src="despacho2.jpeg" alt="Foto espacio" class="s4">
             </div>
 
             <div class="dots">
               <label for="p1" aria-label="Show photo 1"></label>
               <label for="p2" aria-label="Show photo 2"></label>
+              <label for="p3" aria-label="Show photo 3"></label>
+              <label for="p4" aria-label="Show photo 4"></label>
             </div>
           </div>
         </div>
@@ -386,7 +418,9 @@
     <div class="max-w-6xl mx-auto px-5 md:px-8 py-8 text-center text-sm text-slate-700 space-y-3">
       <p>© 2025 Psicología y Emoción</p>
       <p>
-        <strong>Política de Privacidad:</strong> Este sitio web no recopila datos personales. La información para gestionar citas y consultas se trata únicamente a través de los canales indicados en la sección de contacto, bajo la responsabilidad del titular del sitio.
+        <strong>Política de Privacidad:</strong> Este sitio web no recopila datos personales. La información para
+        gestionar citas y consultas se trata únicamente a través de los canales indicados en la sección de contacto,
+        bajo la responsabilidad del titular del sitio.
       </p>
     </div>
   </footer>
